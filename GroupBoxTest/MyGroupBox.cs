@@ -16,6 +16,7 @@ namespace GroupBoxTest
             }
             set
             {
+                if (BorderColor == value) return;
                 _borderColor = value;
                 Refresh();
             }
